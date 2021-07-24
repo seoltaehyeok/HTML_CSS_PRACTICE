@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레드향 주문하기</title>
+</head>
+<body>
+  <h1>레드향 주문하기</h1>
+  <form action="">
+    <fieldset>
+    <legend><b>배송 정보</b></legend>
+    <ul id="shipping">
+      <li>
+        <lable for="prod">주문상품</lable>
+        <input type="text" id="prod" value="상품용 3KG" readonly>
+      </li>
+      <li>
+        <label for="name">이름</label>
+        <input type="text" id="name" required autofocus>
+      </li>
+      <li>
+        <label for="addr">배송 주소</label>
+        <input type="text" id="addr" required>
+      </li>
+      <li>
+        <label for="mail">이메일</label>
+        <input type="email" id="mail">
+      </li>
+      <li>
+        <label for="number">연락처</label>
+        <input type="number" id="number" required>
+      </li>
+      <li>
+        <label for="date">배송 지정</label>
+        <input type="date"id="date"> <small>(주문일로부터 최소 3일 이후)</small>
+      </li>
+      <li>
+        <label for="memo">메모</label>
+        <textarea id="memo" cols="40" rows="5"></textarea>
+      </li>
+    </ul>
+  </fieldset>
+    <input type="submit" value="주문하기">
+    <input type="submit" value="취소하기">
+  
+    <fieldset>
+      <legend>상품선택</legend>
+        <p><b>주문할 상품을 선택해 주세요.</b></p>
+        <label>
+          <select>
+            <option value="gift_3"selected>선물용 3kg</option>
+            <option value="gitf_5">선물용 5kg</option>
+            <option value="home_3">가정용 3kg</option>
+            <option value="home_5">가정용 5kg</option>
+          </select>
+        </label>
+
+    </fieldset>
+  </form>
+</body>
+</html>
