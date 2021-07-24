@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼 삽입하기</title>
+</head>
+<body>
+  <form action="">
+    <P><B>주문할 상품을 선택해 주세요.</B></P>
+    <ul id="shipping">
+      <li>
+        <label>
+          <input type="checkbox" value="gift_3">선물용 3kg
+        </label>
+        <input type="number">개
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" value="gift_5">선물용 5kg
+        </label>
+        <input type="number">개
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" value="home_3">가정용 3kg
+        </label>
+        <input type="nuber">개
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" value="home_5">가정용 5kg
+        </label>
+        <input type="number">개
+      </li>
+    </ul>
+    <p><b>포장 선택</b></p>
+    <ul id="pack or unpack">
+      <li>
+        <label>
+          <input type="radio" name="gift" value="pack">선물 포장
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="radio" name="gift" value="unpack">선물 포장 안함
+        </label>
+      </li>
+    </ul>
+  </form>
+</body>
+</html>
