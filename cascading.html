@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>상품 소개 페이지</title>
+  <style>
+    /* 일반선택자 */
+    h1 {
+      color: brown !important; /*우선순위적용*/
+    }
+    /* 클래스 선택자 */
+    .textred {
+      color: red;
+    }
+    /* 클래스 선택자(일부) */
+    .textblue {
+      color: blue;
+    }
+    /* id 선택자 */
+    #container {
+        border:1px solid #222;
+    }
+    /* 그룹 선택자 */
+    h1, p {
+      color:forestgreen;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+  <h1>레드향</h1>
+  <p class="textred">껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
+  <p>레드향은 한라봉과 귤을 교배한 것으로</p>
+  <p>일반 귤보다 2~3배 크고, <span class="textblue">과육이 붉고 통통</span>하다.</p>
+  </div>
+</body>
+</html>
