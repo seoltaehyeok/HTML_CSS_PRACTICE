@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      ul li{ /*ul의 하위 li*/
+        color:green;
+      }
+      #lecture>li{ /*직계자손li만 적용(22-35)*/
+        border:1px solid red;
+      }
+      ul, ol{ /*배경색*/
+        background-color: powderblue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <ol id="lecture">
+      <li>HTML</li>
+      <li>CSS
+        <ol>
+          <li>
+            selector
+          </li>
+          <li>
+            declaration
+          </li>
+        </ol>
+      </li>
+      <li>JavaScript</li>
+    </ol>
+  </body>
+</html>
