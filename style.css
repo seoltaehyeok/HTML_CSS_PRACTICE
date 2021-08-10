@@ -1,0 +1,86 @@
+:root {
+  /* color */
+  --color-black: #3f454d;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+
+  /* annimation */
+  --animation-delay: 300ms;
+
+  /* size */
+  --size-button: 60px;
+  --size-font: 18px;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  cursor: pointer;
+  transition: transform var(--animation-delay) ease;
+}
+
+.logo:hover,
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn {
+  cursor: pointer;
+  transition: transform var(--animation-delay) ease;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.btnImg {
+  width: var(--size-button);
+  height: var(--size-button);
+}
+
+.btnBlue {
+  background-color: var(--color-blue);
+  width: var(--size-button);
+  height: var(--size-button);
+  border: 4px;
+  cursor: pointer;
+}
+
+.btnYellow {
+  background-color: var(--color-yellow);
+  width: var(--size-button);
+  height: var(--size-button);
+  border: 4px;
+  cursor: pointer;
+}
+
+.btnPink {
+  background-color: var(--color-pink);
+  width: var(--size-button);
+  height: var(--size-button);
+  border: 4px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.colorBtn {
+  font-size:var(--size-font);
+  padding: 3px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
