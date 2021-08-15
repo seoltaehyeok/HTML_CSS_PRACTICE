@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<h1><a href="index.html">WEB</a></h1>
+<input type="button" value="night" onclick="
+var target = document.querySelector('body');
+if (this.value === 'night'){
+  target.style.backgroundColor = 'black';
+  target.style.color = 'white';
+  this.value = 'day';
+
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while(i < alist.length){
+  alist[i].style.color = 'powderblue';
+  i = i+1;
+};
+
+}  else {
+  target.style.backgroundColor = 'white';
+  target.style.color = 'black';
+  this.value = 'night';
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while(i < alist.length){
+  alist[i].style.color = 'blue';
+  i = i+1;
+};
+}
+">
+<ol>
+  <li><a href="http://naver.com">HTML</a></li>
+  <li><a href="http://naver.com">CSS</a></li>
+  <li><a href="http://naver.com">JavaScript</a></li>
+</ol>
+<h2>JavaScript<br>
+JS연습</h2>
+<p>HTTP: 웹페이지와 서버간의 요청과 응답을 관리
+  Hypertext: 하이퍼링크, 문서, 이미지 등
+  AJAX: HTTP를 하는 방법?
+  XML: HTML과 같은 마크업언어 중 하나
+  JSON: (자바스크립트오브젝트노테이션) 서버와 데이터를 주고 받을 때 사용하고 사람들이 주로 사용 KEY: VALUE 로 이루어짐
+  ex) 클라이언트에서 토끼 오브젝트를 서버로 주려면 key : value의 스트링값으로 전해지고 돌아올때도 똑같이 key:value로 돌아온다
+  오브젝트를 직렬화해서 JSON으로 변환할지 중점적으로 공부
+  </p>
+</body>
+</html>
